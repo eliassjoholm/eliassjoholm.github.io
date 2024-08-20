@@ -10,12 +10,14 @@
     .dark-mode {
   background-color: black;
   color: white;
+  box-shadow: 0 1px 4px black;
     }
 
-    .button {
-        background-color: red;
+    .button
+    {
+        background-color: white;
         border: none;
-        color: white;
+        color: black;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -25,46 +27,110 @@
         cursor: pointer;
         box-shadow : 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         border-radius: 4px;
+    }
 
+    .button1 
+    {
+        margin: auto;
 
+    }
+    .button2 {
         
+        margin: auto;
 
     }
 
-    .box {
+            
+        
+
+    .box
+    {
+        min-width: 40%;
+		aspect-ratio: 1/1.25;
+		padding-block: 3%;
+		border-radius: 50px;
+		background-color: #ffffff;
         background-color: pink;
         text-align: center;
         width: 420px;
         height: 120px;
-        padding: 10px;
-        border: 5px solid black;
+        padding: 20px;
+        border: 7px solid black;
+    }
+    .box1 {
+
         margin: 0 auto;
+		margin-right: 200px;
+        margin-top: 128px;
+        margin-bottom: 76px;
+        float: right;
+        height: 150px;
+
 
     }
+
+    .box2 {
+        
+
+        margin: 0 auto;
+		margin-left: 100px;
+		margin-right: 500px;
+        margin-bottom: 700px;
+        float: left;
+        height: 150px;
+
+
+
+    }
+
+    .box3 {
+        min-width: 40%;
+		aspect-ratio: 1/1.25;
+		padding-block: 3%;
+		border-radius: 50px;
+		background-color: #ffffff;
+        background-color: pink;
+        text-align: center;
+        width: 420px;
+        height: 141px;
+        padding: 20px;
+        border: 7px solid black;
+        margin: auto;
+    }
+
+    
 </style>
 
 <body>
-    <div class="box">
+    <div class="box3">
+        <h1> Välkommen </h1>
+        <a href="https://github.com/eliassjoholm" class="button1 button">My profile</a>
+        <button onclick="myFunction()" class="button2 button">Toggle dark mode</button>
+        <a href="minaprojekt.html" class="button3 button">Mina projekt</a>
+
+    </div>
+    <div class="box box1">
         <h1>Min Portfolio</h1>
         <h3>Elias Sjöholm</h3>
     </div>
-    <br />
-    <p class="box">
-        Hej jag heter Elias jag är 19 år och bor i Helsingborg och går TE4 på NTI
+    <br>
+    <div class="box box2">
+        <h1>Om mig</h1>
+        <h3>Hej jag heter Elias jag är 19 år och bor i Helsingborg och går TE4 på NTI
         helsingborg och jag gillar att spela på fritiden och är intresserad av
-        programmering och datorer och spel
-    </p>
+        programmering och datorer och spel</h3>
+    
+        </div>
 
-    <button onclick="myFunction()">Toggle dark mode</button>
 
+
+    
 <script>
 function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
 </script>
-
-<a href="https://github.com/eliassjoholm" class="button">My profile</a>
 
 </body>
 
