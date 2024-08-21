@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.html">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<style>
+    .dark-mode {
+  background-color: black;
+  color: white;
+  box-shadow: 0 1px 4px black;
+    }
+
+     .box
+    {
+        min-width: 40%;
+		aspect-ratio: 1/1.25;
+		padding-block: 3%;
+		border-radius: 50px;
+		background-color: #ffffff;
+        background-color: pink;
+        text-align: center;
+        width: 420px;
+        height: 140px;
+        padding: 20px;
+        border: 7px solid black;
+        margin: auto;
+    }
+    .button
+    {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px; 
+        cursor: pointer;
+        box-shadow : 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 4px;
+    }
+    .box1 {
+        min-width: 40%;
+		aspect-ratio: 1/1.25;
+		padding-block: 3%;
+		border-radius: 50px;
+        background-color: pink;
+        width: 420px;
+        height: 337px;
+        padding: 20px;
+        border: 7px solid black;
+        margin: auto;
+        margin-top: 129px;
+        float: left;
+        margin-left: 58px;
+    }
+
+</style>
+
+<body>
+    <div class="box">
+        <h1>Mina kontakt uppgifter</h1>
+        <a href="index.html" class="button">Home</a>
+        <a href="https://github.com/eliassjoholm" class="button">My profile</a>
+        <a href="minaprojekt.html" class="button">Mina projekt</a>
+        <button onclick="myFunction()" class="button2 button">Toggle dark mode</button>
+        
+        
+    </div>
+
+    <div class="box1">
+        <h1>Mina sociala medier</h1>
+        
+<h3> Email:
+        </h3>
+        <h3> Nummer: 
+        </h3>
+        <h3> Socials----></h3>
+        <a href="" class="button">Instargram</a>
+        <a href="" class="button">LinkedIn</a>
+        <a href="https://github.com/eliassjoholm" class="button">Github</a>
+        
+
+
+    </div>
+
+    
+    
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+        
+</body>
+
+</html>
